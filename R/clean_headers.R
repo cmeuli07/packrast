@@ -6,11 +6,11 @@ require(tidyverse)
 #' This function accepts a data frame argument
 #' and cleans up the headers
 #' Only works with data exported as xls
-#' clean_headers
 
-clean_headers <- function(x){
 
-  headers <- colnames(x) %>%
+clean_headers <- function(data){
+
+  headers <- colnames(data) %>%
     tolower() %>%
     str_replace_all(., "\\s", "_") %>%
     str_replace_all(., "\\$", "dol") %>%
@@ -28,8 +28,8 @@ clean_headers <- function(x){
     str_replace_all(., "disp_wo_feat", "disp") %>%
     str_replace_all(., "feat_wo_disp", "feat")
 
-  colnames(x) <- headers
+  colnames(data) <- headers
 
-  return(x)
+  return(data)
 
 }
