@@ -4,14 +4,12 @@
 \alias{clean_headers}
 \title{This function accepts a data frame argument
 and cleans up the headers
-Only works with data exported as xls
-clean_headers}
+Only works with data exported as xls}
 \usage{
-clean_headers(x)
+clean_headers(data)
 }
 \description{
 This function accepts a data frame argument
 and cleans up the headers
 Only works with data exported as xls
-clean_headers
 }
