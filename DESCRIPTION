@@ -1,0 +1,14 @@
+Package: packrast
+Title: Useful Functions for Daymon's Retail Analytical Support Team
+Version: 0.0.0.9000
+Authors@R: 
+    person(given = "Christian",
+           family = "Meuli",
+           role = c("aut", "cre"),
+           email = "cmeuli@daymon.com",
+           comment = c(ORCID = "YOUR-ORCID-ID"))
+Description: Useful functions for Daymon Retail Analytical Support Team.
+License: What license it uses
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.1.1
