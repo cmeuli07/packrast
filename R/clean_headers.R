@@ -15,7 +15,7 @@ clean_headers <- function(data){
     str_replace_all(., "\\$", "dol") %>%
     str_replace_all(., "&", "and") %>%
     str_replace_all(., "#", "num") %>%
-    str_replace_all(., "bc_department", "department") %>%
+    str_replace_all(., "bc_department", "dept") %>%
     str_replace_all(., "bc_super_category", "super_cat") %>%
     str_replace_all(., "bc_category", "cat") %>%
     str_replace_all(., "bc_sub_category", "sub_cat") %>%
@@ -24,6 +24,7 @@ clean_headers <- function(data){
     str_replace_all(., "%", "pct") %>%
     str_replace_all(., "pctacv", "pct_acv") %>%
     str_replace_all(., "short_product_description", "short_prod_desc") %>%
+    str_replace_all(., "long_product_description", "long_prod_desc") %>% 
     str_replace_all(., "disp_wo_feat", "disp") %>%
     str_replace_all(., "feat_wo_disp", "feat")
 
