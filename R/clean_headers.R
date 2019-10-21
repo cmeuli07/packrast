@@ -26,7 +26,12 @@ clean_headers <- function(data){
     str_replace_all(., "short_product_description", "short_prod_desc") %>%
     str_replace_all(., "long_product_description", "long_prod_desc") %>% 
     str_replace_all(., "disp_wo_feat", "disp") %>%
-    str_replace_all(., "feat_wo_disp", "feat")
+    str_replace_all(., "feat_wo_disp", "feat") %>% 
+    str_replace_all(., "]", "") %>% 
+    str_replace_all(., "[", "") %>% 
+    str_replace_all(., "(", "") %>% 
+    str_replace_all(., ")", "") %>% 
+    str_replace_all(., "\\?", "")
 
   colnames(data) <- headers
 
